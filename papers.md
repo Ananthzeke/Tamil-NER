@@ -10,3 +10,8 @@ Using Margin-Infused Relaxed Algorithm (MIRA)](https://doi.org/10.1007/978-3-319
 9. [Randomized Kernel Approach for Named Entity Recognition in Tamil](http://dx.doi.org/10.17485/ijst/2015/v8i24/85350)
 10. [Named Entity Recognition in Tamil from Code Mix
 Social Media Text](http://uttamam.org/papers/20_05.pdf)
+11. [Enriching Word Vectors with Subword Information](https://doi.org/10.48550/arXiv.1607.04606)
+12. [Introduction to the CoNLL-2003 Shared Task:
+Language-Independent Named Entity Recognition](https://aclanthology.org/W03-0419.pdf)
+13. [Neural Architectures for Named Entity Recognition](https://doi.org/10.48550/arXiv.1603.01360)
+14. [Naamapadam - Named Entity Annotated dataset for 11 Indic languages](https://huggingface.co/datasets/ai4bharat/naamapadam)
