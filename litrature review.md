@@ -40,6 +40,53 @@ Method:
 Evalutation:
 - ![](NER%20Results.png)
 
+5-Tamil NER - Coping with real time challenges
+NER techinques
+  - Rule based techinque using max entropy
+  - using HMM
+  - bootstrapping approach using concept based seeds and using maximum entropy markov model
+  - CRF model   
+To improve NER models
+  - using dataset with distributional similarity, lexicon,term co-occurences and language cues.
+  - combining the above mentioned global charactersitics with the local context improves accuracy.
+
+problems 
+  - In HMM there is a dependency problem
+  - MEMM have labeling  bias problem
+Tagset
+    - hierarchical tagset (106 tags)
+    - Mainly three classes
+        1.Entity Names (ENAMEX)
+        2.Numerical Expressions (NUMEX) 
+        3.Time Experessions (TIMEX)
+Features
+    - Individual words
+    - POS tag of words
+    - combination of word and POS
+    - chunk - noun phrase,verb phrase
+    - combination of word,POS and chunk
+Dataset
+    - The corpus is collected from online tourism sites.It consits of 93k words.
+    - Train and  test are split  into 70% and 30%.
+challenges in Tamil
+    - Agglutination - Case Markers attached  to proper or common nouns to form a single word.
+    - Ambiguity - same word different meaning in a sentence.
+    - Nested Entities 
+    - Spell Variations
+    - Name variations
+    - Capitalization
+    - Noise in the data ex:HTML tags
+Evaluation
+    - CRF model
+      ![](5-images/2.png)
+    - Yamcha SVM model
+      ![](5-images/3.png)
+      ![](5-images/3_i.png)
+    - Solution for agglutination is considering the root word instead of the actual word.
+    ![](5-images/4.png)
+    -  Evaluation results – after the application of root word and heuristic rules post.
+    ![](5-images/5.png)
+    
 8 - Named-Entity-Recognition (NER) for Tamil Language Using Margin-Infused Relaxed Algorithm (MIRA)
 
 Data: 
