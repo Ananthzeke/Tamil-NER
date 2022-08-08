@@ -107,6 +107,62 @@ Evaluation:
   -  Evaluation results – after the application of root word and heuristic rules post.
     
    ![](5-images/5.png)
+   
+7-Domain focused Named Entity Recognizer for Tamil using Conditional Random Fields
+
+NER Techniques :
+
+ - HMM
+ - MEMM
+ - CRF
+ 
+Tagset :
+
+  - hierarchical tagset (106 tags)
+  - level 0 with 3  tags ex:1,2,3
+  - level 1 with 25 tags ex:1.1,1.11,2.1
+  - level 2 with 50 tags ex:1.1.1,1.1.2
+  - level 3 with 31 tags ex:1.1.1.1,1.2.4
+  
+Method :
+
+  - CRF++ toolkit (Taku Kudo, 2005) -linear chain CRF
+  
+Benifits of choosing CRF :  
+
+  - suited for sequence labeling task
+  - Rules can be implemented in Machine Learning
+  - No dependency and label bias problem
+  
+Dataset :
+
+  -  Datset is based on tourism domain.
+  -  94k words and contains 20k named entities
+  -  Train and  test are split  into 80% and 20%.
+  -  Training Data:
+     - Nested tagging based on levels. 
+     ex: lvl1=location,lvl2=place,lvl3=city
+  -  Test Data:  
+      - processed with morph analysis,POS and Noun Phrases chunking
+      - test data is tagged with 3 levels of heirarchy and merged
+      
+Attributes and Features :
+
+  - Root of words
+  - POS
+  - word and POS combined
+  - Dictionary of named entities
+  - Patterns 
+  - Bigram of Named Entity label
+
+Evaluation :
+
+- Evaluation of output from NER engine for each level
+  ![](7-images/1.png)
+
+- Overall result from NER engine
+  ![](7-images/2.png)
+
     
 8 - Named-Entity-Recognition (NER) for Tamil Language Using Margin-Infused Relaxed Algorithm (MIRA)
 
