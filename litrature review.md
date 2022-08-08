@@ -158,9 +158,11 @@ Attributes and Features :
 Evaluation :
 
 - Evaluation of output from NER engine for each level
+
   ![](7-images/1.png)
 
 - Overall result from NER engine
+
   ![](7-images/2.png)
 
     
