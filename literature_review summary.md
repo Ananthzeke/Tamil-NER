@@ -1,13 +1,5 @@
 # Summary
 
-## Datasets
-- Datasets 
-- 
-## Tag sets
-- Tagsets 
-## Approaches
-- CRF
-- 
 ## Models 
 
 - Naive Bayes Classification:
@@ -85,6 +77,3 @@
     - In cases where the number of properties for each data point outstrips the number of training data specimens, the support vector machine will underperform.
   - Maximum accuracy: F1 score – 81.62% (9)
   - Average accuracy: F1 score – 81.62
- 
-## Evaluations
-Dataset splits Model Tagset Result
