@@ -1,5 +1,27 @@
 # Summary
 
+Comparision of Previous works on Tamil NER
+
+| Paper                               | Dataset                      | Tagset                     | Features                             | Model       | Result (F1 score) |
+| ----------------------------------- | ---------------------------- | -------------------------- | ------------------------------------ | ----------- | ----------------- |
+| [10] Pattabhi et al.,   2020        | Twitter Corpus               | AU-KBC Hierarchial tagset  | stat. suffixes using context windows | CRF         | 70.93             |
+| [1] Srinivasan &  Subalalitha, 2019 | Groningen Meaning Bank (GMB) | PER, LOC, ORG, Date, Time  | REGEX, MORPH, Context windows        | Naive Bayes | 86.94             |
+| [1] Srinivasan &  Subalalitha, 2019 | FIRE 2018 IECSIL             | IECSIL (9)                 | REGEX, MORPH, Context windows        | Naive Bayes | 83.54             |
+| [2] Hariharan et al., 2019          | FIRE 2018 IECSIL             | IECSIL (9)                 | FastText Embeddings                  | LSTM        | 94.54             |
+| [2] Hariharan et al., 2019          | FIRE 2018 IECSIL             | IECSIL (9)                 | GloVE Embeddings                     | LSTM        | 93.06             |
+| [2] Hariharan et al., 2019          | FIRE 2018 IECSIL             | IECSIL (9)                 | Rand Embeddings                      | LSTM        | 87.23             |
+| [2] Hariharan et al., 2019          | wiki crawl                   | Wiki (21)                  | FastText Embeddings                  | LSTM        | 91.29             |
+| [2] Hariharan et al., 2019          | wiki crawl                   | Wiki (21)                  | GloVE Embeddings                     | LSTM        | 90.06             |
+| [2] Hariharan et al., 2019          | wiki crawl                   | Wiki (21)                  | Rand Embeddings                      | LSTM        | 84.03             |
+| [8] Theivendiram et al., 2018       | Tamil BBC newspaper articles | PER, LOC, ORG, COUNT, TIME | gazetteer, POS, Orth features        | MIRA        | 81.38             |
+| [8] Theivendiram et al., 2018       | Tamil BBC newspaper articles | PER, LOC, ORG, COUNT, TIME | gazetteer, POS, Orth features        | CRF         | 79.13             |
+| [9] Abinaya et al., 2015            | NER Track (FIRE)             | PER, LOC, ORG              | Word                                 | RKS         | 86.61 (accuracy)  |
+| [9] Abinaya et al., 2015            | NER Track (FIRE)             | PER, LOC, ORG              | Word                                 | SVM         | 81.62 (accuracy)  |
+| [9] Abinaya et al., 2015            | NER Track (FIRE)             | PER, LOC, ORG              | Word                                 | CRF         | 87.21 (accuracy)  |
+| [4] Jeyashenbagavalli et al., 2014  | private corpus               | NE (7)                     | POS and word level features          | RULE+HMM    | 89.7              |
+| [5] Malarkodi et al., 2012          | Online Tourism corpus        | AU-KBC Hierarchial tagset  | Word, POS, chunks                    | CRF         | 70.68             |
+
+NE (7) - PER, ORG, LOC, TIME, MEASURE, NUMBER
 ## Models 
 
 - Naive Bayes Classification:
