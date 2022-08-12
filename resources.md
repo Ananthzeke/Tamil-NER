@@ -1,3 +1,4 @@
 - [TDIL](http://tdil-dc.in/index.php?lang=en)
 - [Ezhil-Language-Foundation/awesome-tamil](https://github.com/Ezhil-Language-Foundation/awesome-tamil)
 - [Tamil NLP Catlog](https://narvidhai.github.io/tamil-nlp-catalog/#/)
+- [Infitt](https://www.infitt.org/resources-page/)
