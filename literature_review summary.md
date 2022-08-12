@@ -22,6 +22,19 @@ Comparision of Previous works on Tamil NER
 | [5] Malarkodi et al., 2012          | Online Tourism corpus        | AU-KBC Hierarchial tagset  | Word, POS, chunks                    | CRF         | 70.68             |
 
 NE (7) - PER, ORG, LOC, TIME, MEASURE, NUMBER
+
+# Problem for tamil NLP and suggested solutions
+
+1.  [5] - Agglutination -  Morpholological analysis
+3.  [5] - Ambiguity - context features can be used
+4.  [5] - Nested Entities - Only the outer entitiy is tagged 
+5.  [5] - Name variations - character level embeddings can be used
+6.  [5] - Spell variations - character level embeddings can be used
+7.  [5] - Capitalization - Rule based systems cannot be used
+8.  [5] - Lack of Standard corpora - Use AI4Bharath dataset for comparision
+9.  [5] - Morphology - taking into account the morphological data using subword level entities
+10. [6] - Partial free word order 
+
 ## Models 
 
 - Naive Bayes Classification:
