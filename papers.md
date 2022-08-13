@@ -17,3 +17,4 @@ Language-Independent Named Entity Recognition](https://aclanthology.org/W03-0419
 14. [Naamapadam - Named Entity Annotated dataset for 11 Indic languages](https://huggingface.co/datasets/ai4bharat/naamapadam)
 15. [A Joint Named-Entity Recognizer for Heterogeneous Tag-sets
 Using a Tag Hierarchy](https://arxiv.org/abs/1905.09135.pdf)
+16. [Transfer Learning for Named-Entity Recognition with Neural Networks](https://doi.org/10.48550/arXiv.1705.06273)
