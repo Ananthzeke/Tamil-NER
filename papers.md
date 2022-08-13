@@ -18,3 +18,4 @@ Language-Independent Named Entity Recognition](https://aclanthology.org/W03-0419
 15. [A Joint Named-Entity Recognizer for Heterogeneous Tag-sets
 Using a Tag Hierarchy](https://arxiv.org/abs/1905.09135.pdf)
 16. [Transfer Learning for Named-Entity Recognition with Neural Networks](https://doi.org/10.48550/arXiv.1705.06273)
+17. [GRN to enhance CNN for NER](https://doi.org/10.1609/aaai.v33i01.33016236) - 2019
