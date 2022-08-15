@@ -19,3 +19,6 @@ Language-Independent Named Entity Recognition](https://aclanthology.org/W03-0419
 Using a Tag Hierarchy](https://arxiv.org/abs/1905.09135.pdf)
 16. [Transfer Learning for Named-Entity Recognition with Neural Networks](https://doi.org/10.48550/arXiv.1705.06273)
 17. [GRN to enhance CNN for NER](https://doi.org/10.1609/aaai.v33i01.33016236) - 2019
+18. [A Survey on Deep Learning for Named Entity Recognition](https://doi.org/10.48550/arXiv.1812.09449) - 2018
+19. [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](https://doi.org/10.48550/arXiv.1603.01354) - 2016
+20. [Named Entity Recognition with Bidirectional LSTM-CNNs](https://doi.org/10.48550/arXiv.1511.08308) - 2016
