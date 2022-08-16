@@ -1,0 +1,9 @@
+|         Character Representation         |
+| ---------------------------------------- |
+| Technique      | Max. F1 Measure | Works |
+| -------------- | --------------- | ----- |
+| LSTM           | 93.37%          | 134   |
+| CNN            |                 |       |
+| GRU            |                 |       |
+| LSTM - LM      |                 |       |
+| CC - LSTM - LM |                 |       |
