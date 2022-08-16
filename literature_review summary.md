@@ -35,6 +35,8 @@ NE (7) - PER, ORG, LOC, TIME, MEASURE, NUMBER
 9.  [5] - Morphology - taking into account the morphological data using subword level entities
 10. [6] - Partial free word order 
 
+# Neural network and CRF based NER approaches
+
 ## Models 
 
 - Naive Bayes Classification:
