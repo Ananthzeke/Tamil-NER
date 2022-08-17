@@ -62,3 +62,14 @@
 | RNN         | 93.47% [136]    |
 
 # Tag decoder
+
+| Technique          | Max. F1 Measure |
+| ------------------ | --------------- |
+| CRF                | 93.50% [132]    |
+| GRU                | 93.47% [135]    |
+| Pointer Network    | 96.86% [95]     |
+| LSTM               | 75.00% [96]     |
+| Softmax            | 92.80% [119]    |
+| Reranker           | 91.62% [102]    |
+| Semi-CRF           | 91.38% [143]    |
+| Softmax +Dice Loss | 93.33% [138]    |
