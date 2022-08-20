@@ -35,7 +35,65 @@ NE (7) - PER, ORG, LOC, TIME, MEASURE, NUMBER
 9.  [5] - Morphology - taking into account the morphological data using subword level entities
 10. [6] - Partial free word order 
 
-# Neural network and CRF based NER approaches
+# DL Based approaches Taxonomy
+## Distributed Input Representations
+- Character Level Representations
+  - CNN Based 
+  - RNN Based 
+    - LSTM
+    - GRU
+- Word Level Representations - Pretrained representations using unsupervised methods
+  - CBOW
+  - Continuous Skipgram
+  - Word2Vec - Google
+  - GloVe - Stanford
+  - fastText - Facebook
+- Hybrid Representations - Uses additional information
+  - gazetteers
+  - lexical similarity
+  - linguistic dependencies
+  - visual features
+  - Spelling features
+  - context features
+## Context Encoders
+- CNN - Colobert et al. [17], CNN on BioNER - Yao et al.[94], Wu et al. [12]
+- RNN (BLSTM-RE) - Zhou et al. [96] , BLSTM and CNN with sigmoid classifier, both are passed to another LSTM to predict entities
+- ID-CNN - larger context using Dialated CNN Block comparable results with Bi-LSTM-CRF - strubell et al. (2017)
+- Bidirectional RNN considered as de facto standard for deep context dependent representations of text [91], [97]
+- BiLSTM-CRF - Haung et al.
+- Deep GRU on both character level and word levels to encode morphology and context information. - Yang et al [106].
+- Multiple independent BiLSTM across same input by employing inter-model regularization term, reducing total number of parameters - Gregoric et al. [121]
+
+## Tag Decoders
+- MLP + Softmax - predicts tags for words independently based on context dependent representations
+- CRF - used in combination with BiLSTM and CNN layers, provides state of art performance
+- RNN - Outperforms CRF and faster to train when number of entity types is large
+- Pointer Networks - two neural nets one segments and the other labels - Zhai et al.
+
+
+# Challenges in Deep learning based NER aproaches
+- Data annotation 
+  - Time Consuming
+  - Inconsistencies
+  - Nested entities
+- Informal text
+  - Models trained on formal texts provide better accuracy in formal text
+  - but show less accuracy in informal texts such as tweets, comments, etc.
+- Unseen entities
+
+# Future Directions in DL NER approaches
+- NER with Domain Specific Entities
+- Named Entitiy Boundary Detection - Dedicated task for boundary detection of named entities
+- Entity linking - Linking an entity with its unique identity in a knowledge base
+- NER in informal text with auxilary resources 
+  - Usage of gezzeters as additional features does not show an evidence of performance increase
+  - Method for incorporating auxilary resources with DL based approaches.
+- Making scalable NER models increasing performance and reducing model complexity - model compression and pruning techniques may be used
+- Transfer learning with NER
+  - Adapting to different domains
+  - zero-shot, one-shot and few-shot learning
+  - domain mismatch, label mismatch in cross domain techniques.
+- Development of Easy to use toolkit for DL based NER
 
 ## Models 
 
